@@ -1,0 +1,36 @@
+<https://api.stage.sinopia.io/resource/pcc:bf2:Title:AbbreviatedTitle> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bf2:Title:AbbreviatedTitle";
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/AbbreviatedTitle>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Title--Abbreviated Title";
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC";
+    <http://sinopia.io/vocabulary/hasDate> "2020-09-20";
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b210.
+<http://id.loc.gov/ontologies/bibframe/AbbreviatedTitle> <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/ontologies/bibframe/AbbreviatedTitle".
+_:b210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b211;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b212.
+_:b211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b213;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b214.
+_:b212 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Abbreviated Title";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/mainTitle>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/mainTitle> <http://www.w3.org/2000/01/rdf-schema#label> "main title".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b215.
+_:b214 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Qualifier"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/qualifier>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/qualifier> <http://www.w3.org/2000/01/rdf-schema#label> "qualifier"@en.
+_:b215 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Assigner Agent Code"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/assigner>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b216.
+<http://id.loc.gov/ontologies/bibframe/assigner> <http://www.w3.org/2000/01/rdf-schema#label> "assigner"@en.
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b216 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Agent:Code>.
+<pcc:bf2:Agent:Code> <http://www.w3.org/2000/01/rdf-schema#label> "Agent (pcc:bf2:Agent:Code)"@en.
