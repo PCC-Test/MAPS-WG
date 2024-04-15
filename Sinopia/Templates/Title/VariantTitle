@@ -1,0 +1,71 @@
+<https://api.stage.sinopia.io/resource/pcc:bf2:Title:VariantTitle> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bf2:Title:VariantTitle";
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/VariantTitle>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Title--Variant Title (Monograph)";
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC";
+    <http://sinopia.io/vocabulary/hasDate> "2020-09-20"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b123.
+<http://id.loc.gov/ontologies/bibframe/VariantTitle> <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/ontologies/bibframe/VariantTitle".
+_:b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b124;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b125.
+_:b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b126;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b127.
+_:b125 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Variant Title";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/mainTitle>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <https://original.rdatoolkit.org/rdachp2_rda2-4004.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/mainTitle> <http://www.w3.org/2000/01/rdf-schema#label> "main title".
+<https://original.rdatoolkit.org/rdachp2_rda2-4004.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.3.6".
+<http://sinopia.io/vocabulary/propertyAttribute/repeatable> <http://www.w3.org/2000/01/rdf-schema#label> "repeatable".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b128;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b129.
+_:b127 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Variant Other title information"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/subtitle>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/subtitle> <http://www.w3.org/2000/01/rdf-schema#label> "subtitle"@en.
+_:b128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b130;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b131.
+_:b129 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Variant Part Number/Letter"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/partNumber>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <https://original.rdatoolkit.org/rdachp2_rda2-10141.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/partNumber> <http://www.w3.org/2000/01/rdf-schema#label> "part number".
+<https://original.rdatoolkit.org/rdachp2_rda2-10141.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.3.1.7.1"@en.
+_:b130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b132;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b133.
+_:b131 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Variant Title of Part";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/partName>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <https://original.rdatoolkit.org/rdachp2_rda2-10141.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/partName> <http://www.w3.org/2000/01/rdf-schema#label> "part name".
+_:b132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b134.
+_:b133 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Variant Title Type";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/variantType>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasRemark> "Record type of variant title, e.g., Portion of title, Cover title, Caption title, Spine title"@eng.
+<http://id.loc.gov/ontologies/bibframe/variantType> <http://www.w3.org/2000/01/rdf-schema#label> "variant type".
+_:b134 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note on Variant Title of Work"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/note>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <https://original.rdatoolkit.org/2.17.2.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Add here any necessary notes on this specific title group"@en;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b135.
+<http://id.loc.gov/ontologies/bibframe/note> <http://www.w3.org/2000/01/rdf-schema#label> "note".
+<https://original.rdatoolkit.org/2.17.2.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.17.2"@en.
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b135 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Note:GeneralNote>.
+<pcc:bf2:Note:GeneralNote> <http://www.w3.org/2000/01/rdf-schema#label> "Note (pcc:bf2:Note:GeneralNote)"@en.
