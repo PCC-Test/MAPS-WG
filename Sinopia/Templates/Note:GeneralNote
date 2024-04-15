@@ -4,14 +4,35 @@
     <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/Note>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Note";
     <http://sinopia.io/vocabulary/hasAuthor> "PCC";
-    <http://sinopia.io/vocabulary/hasDate> "2020-09-20";
-    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b65.
+    <http://sinopia.io/vocabulary/hasDate> "2023-12-20";
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b15.
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@en.
 <http://id.loc.gov/ontologies/bibframe/Note> <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/ontologies/bibframe/Note".
-<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "http://www.w3.org/2000/01/rdf-schema#label".
-_:b65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b66.
-_:b66 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "label".
+_:b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b16;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b17.
+_:b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b18;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b19.
+_:b17 a <http://sinopia.io/vocabulary/PropertyTemplate>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Note";
     <http://sinopia.io/vocabulary/hasPropertyUri> <http://www.w3.org/2000/01/rdf-schema#label>;
     <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
 <http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b21.
+_:b19 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note Type (Controlled vocabulary)"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/uri>;
+    <http://sinopia.io/vocabulary/hasRemark> "Use this property to define the type of note according to the provide controlled vocabulary. If there is no relevant term, use the Note type (Free text term) to provide the type of note if desired."@en;
+    <http://sinopia.io/vocabulary/hasLookupAttributes> _:b20.
+<http://sinopia.io/vocabulary/propertyType/uri> <http://www.w3.org/2000/01/rdf-schema#label> "uri or lookup".
+_:b20 a <http://sinopia.io/vocabulary/LookupPropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasAuthority> <https://id.loc.gov/vocabulary/mnotetype>.
+<https://id.loc.gov/vocabulary/mnotetype> <http://www.w3.org/2000/01/rdf-schema#label> "note type".
+_:b21 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note type (Free text)"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/noteType>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasRemark> "Use this property to define a type of note that does not exist in the available controlled vocabulary if desired."@en.
+<http://id.loc.gov/ontologies/bibframe/noteType> <http://www.w3.org/2000/01/rdf-schema#label> "Note type"@en.
