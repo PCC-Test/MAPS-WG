@@ -1,0 +1,66 @@
+<https://api.stage.sinopia.io/resource/pcc:bf2:Title:ParallelTitle> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bf2:Title:ParallelTitle";
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/ParallelTitle>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Title--Parallel Title";
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC";
+    <http://sinopia.io/vocabulary/hasDate> "2020-09-20"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b86.
+<http://id.loc.gov/ontologies/bibframe/ParallelTitle> <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/ontologies/bibframe/ParallelTitle".
+_:b86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b87;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b88.
+_:b87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b89;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b90.
+_:b88 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Parallel Title Proper";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/mainTitle>;
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Equivalent to the MARC 245 $b when it is preceded by an equal sign (e.g., 245 $a Equality = $b Egalité). For multiple parallel titles, add a new field."@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/mainTitle> <http://www.w3.org/2000/01/rdf-schema#label> "main title".
+<http://sinopia.io/vocabulary/propertyAttribute/repeatable> <http://www.w3.org/2000/01/rdf-schema#label> "repeatable".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b91;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b92.
+_:b90 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Parallel Other Title Information"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/subtitle>;
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Add any Other Title Information in the same language as the Parallel Title"@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/subtitle> <http://www.w3.org/2000/01/rdf-schema#label> "subtitle".
+_:b91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b93;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b94.
+_:b92 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Parallel Part Number/Letter"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/partNumber>;
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Add any Part Number/Letter associated with the Parallel Title"@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-10141.html>.
+<http://id.loc.gov/ontologies/bibframe/partNumber> <http://www.w3.org/2000/01/rdf-schema#label> "part number".
+<http://original.rdatoolkit.org/rdachp2_rda2-10141.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.3.1.7.1"@en.
+_:b93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b95.
+_:b94 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Parallel Part Title";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/partName>;
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Add any Part Title in the same language as the Parallel Title"@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-10141.html>.
+<http://id.loc.gov/ontologies/bibframe/partName> <http://www.w3.org/2000/01/rdf-schema#label> "part name".
+_:b95 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note on Parallel Title";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/note>;
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Add here any necessary notes about this specific title group."@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://access.rdatoolkit.org/2.17.2.html>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b96.
+<http://id.loc.gov/ontologies/bibframe/note> <http://www.w3.org/2000/01/rdf-schema#label> "note".
+<http://access.rdatoolkit.org/2.17.2.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.17.2".
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b96 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Note:GeneralNote>.
+<pcc:bf2:Note:GeneralNote> <http://www.w3.org/2000/01/rdf-schema#label> "Note (pcc:bf2:Note:GeneralNote)"@en.
