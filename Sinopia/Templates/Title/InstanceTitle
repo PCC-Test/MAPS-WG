@@ -1,0 +1,82 @@
+<https://api.stage.sinopia.io/resource/pcc:bf2:Title:InstanceTitle> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bf2:Title:InstanceTitle";
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/Title>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Title--Instance Title";
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC";
+    <http://sinopia.io/vocabulary/hasRemark> "Title information for instance (manifestation): title proper, other title information, part number and name, note";
+    <http://sinopia.io/vocabulary/hasDate> "2020-09-20"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b50.
+_:b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b51;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b52.
+_:b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b53;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b54.
+_:b52 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Title Proper";
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Equivalent to MARC 245 $a"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/mainTitle>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-10141.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/required>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/mainTitle> <http://www.w3.org/2000/01/rdf-schema#label> "main title".
+<http://original.rdatoolkit.org/rdachp2_rda2-10141.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.3.2".
+<http://sinopia.io/vocabulary/propertyAttribute/required> <http://www.w3.org/2000/01/rdf-schema#label> "required".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b56;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b57.
+_:b54 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Number of Non-Filing Characters"@en;
+    <http://sinopia.io/vocabulary/hasRemark> "Add the number of non-filing characters at the start of the title proper. Equivalent to the MARC 245 second indicator."@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://sinopia.io/vocabulary/bf/nonfiling>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasLiteralAttributes> _:b55.
+<http://sinopia.io/vocabulary/bf/nonfiling> <http://www.w3.org/2000/01/rdf-schema#label> "Nonfiling Indicator"@en.
+_:b55 a <http://sinopia.io/vocabulary/LiteralPropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasValidationDataType> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2000/01/rdf-schema#label> "Integer (xsd:integer)".
+_:b56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b58;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b59.
+_:b57 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Other Title Information";
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Equivalent to MARC 245 $b. Exception: Put parallel titles proper in the Parallel title field"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/subtitle>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-3781.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/subtitle> <http://www.w3.org/2000/01/rdf-schema#label> "subtitle".
+<http://original.rdatoolkit.org/rdachp2_rda2-3781.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.3.4".
+<http://sinopia.io/vocabulary/propertyAttribute/repeatable> <http://www.w3.org/2000/01/rdf-schema#label> "repeatable".
+_:b58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b60;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b61.
+_:b59 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Part Number/Letter";
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Equivalent to MARC 245 $n.  Exception: Put part numbers in the Parallel number/letter of part field"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/partNumber>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-10141.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/partNumber> <http://www.w3.org/2000/01/rdf-schema#label> "part number".
+_:b60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b62.
+_:b61 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Part Title";
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Equivalent to MARC 245 $p.  Exception: Put parallel titles proper in the Parallel title of part field"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/partName>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-10141.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/partName> <http://www.w3.org/2000/01/rdf-schema#label> "Part name".
+_:b62 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note on Title";
+    <http://sinopia.io/vocabulary/hasRemark> "SINOPIA GUIDANCE: Add here any necessary notes about this specific title group."@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/note>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-8700.html>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b63.
+<http://id.loc.gov/ontologies/bibframe/note> <http://www.w3.org/2000/01/rdf-schema#label> "note".
+<http://original.rdatoolkit.org/rdachp2_rda2-8700.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.17.2".
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b63 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Note:GeneralNote>.
+<pcc:bf2:Note:GeneralNote> <http://www.w3.org/2000/01/rdf-schema#label> "Note (pcc:bf2:Note:GeneralNote)"@en.
