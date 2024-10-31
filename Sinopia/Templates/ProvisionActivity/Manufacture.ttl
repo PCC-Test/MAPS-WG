@@ -1,0 +1,73 @@
+<https://api.stage.sinopia.io/resource/pcc:bflc:ProvisionActivity:Manufacture> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bflc:ProvisionActivity:Manufacture"@en;
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/Manufacture>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Provision Activity--Manufacture Information"@en;
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC"@en;
+    <http://sinopia.io/vocabulary/hasDate> "2022-11-29"@en;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b435.
+_:b435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b436;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b437.
+_:b436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b438;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b439.
+_:b437 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Year of Manufacture"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/date>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/date> <http://www.w3.org/2000/01/rdf-schema#label> "date".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b438 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b441;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b442.
+_:b439 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Country of Manufacture"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/place>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/uri>;
+    <http://sinopia.io/vocabulary/hasRemark> "Add the FAST term if a linkable place name is wanted. "@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasLookupAttributes> _:b440.
+<http://id.loc.gov/ontologies/bibframe/place> <http://www.w3.org/2000/01/rdf-schema#label> "place".
+<http://sinopia.io/vocabulary/propertyAttribute/repeatable> <http://www.w3.org/2000/01/rdf-schema#label> "repeatable".
+<http://sinopia.io/vocabulary/propertyType/uri> <http://www.w3.org/2000/01/rdf-schema#label> "uri or lookup".
+_:b440 a <http://sinopia.io/vocabulary/LookupPropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasAuthority> <urn:ld4p:qa:loc:countries>.
+<urn:ld4p:qa:loc:countries> <http://www.w3.org/2000/01/rdf-schema#label> "LOC MARC Countries (QA) - direct".
+_:b441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b443;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b444.
+_:b442 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Place of Manufacture"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bflc/simplePlace>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-7362.html>.
+<http://id.loc.gov/ontologies/bflc/simplePlace> <http://www.w3.org/2000/01/rdf-schema#label> "simplePlace".
+<http://original.rdatoolkit.org/rdachp2_rda2-7362.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.10.2"@en.
+_:b443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b445;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b446.
+_:b444 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer's Name"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bflc/simpleAgent>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasRemark> "If a linkable value is wanted for the manufacturer's name and role, also add a bf:Contribution in the instance template."@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-7455.html>.
+<http://id.loc.gov/ontologies/bflc/simpleAgent> <http://www.w3.org/2000/01/rdf-schema#label> "simpleAgent".
+<http://original.rdatoolkit.org/rdachp2_rda2-7455.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.10.4"@en.
+_:b445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b447.
+_:b446 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Date of Manufacture"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bflc/simpleDate>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bflc/simpleDate> <http://www.w3.org/2000/01/rdf-schema#label> "simpleDate".
+_:b447 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note on Manufacture Statement"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/note>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-9266.html>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b448.
+<http://id.loc.gov/ontologies/bibframe/note> <http://www.w3.org/2000/01/rdf-schema#label> "note"@en.
+<http://original.rdatoolkit.org/rdachp2_rda2-9266.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.17.8"@en.
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b448 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Note:GeneralNote>.
+<pcc:bf2:Note:GeneralNote> <http://www.w3.org/2000/01/rdf-schema#label> "Note (pcc:bf2:Note:GeneralNote)"@en.
