@@ -1,0 +1,75 @@
+<https://api.stage.sinopia.io/resource/pcc:bflc:ProvisionActivity:Distribution> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bflc:ProvisionActivity:Distribution"@en;
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/Distribution>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Provision Activity--Distribution Information"@en;
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC"@en;
+    <http://sinopia.io/vocabulary/hasDate> "2022-11-29"@en;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b393.
+_:b393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b394;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b395.
+_:b394 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b396;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b397.
+_:b395 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Year of Distribution"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/date>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/date> <http://www.w3.org/2000/01/rdf-schema#label> "date".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b396 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b399;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b400.
+_:b397 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Country of Distribution"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/place>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/uri>;
+    <http://sinopia.io/vocabulary/hasRemark> "Add a FAST term if a linkable place name is wanted. "@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasLookupAttributes> _:b398.
+<http://id.loc.gov/ontologies/bibframe/place> <http://www.w3.org/2000/01/rdf-schema#label> "place".
+<http://sinopia.io/vocabulary/propertyAttribute/repeatable> <http://www.w3.org/2000/01/rdf-schema#label> "repeatable".
+<http://sinopia.io/vocabulary/propertyType/uri> <http://www.w3.org/2000/01/rdf-schema#label> "uri or lookup".
+_:b398 a <http://sinopia.io/vocabulary/LookupPropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasAuthority> <urn:ld4p:qa:loc:countries>.
+<urn:ld4p:qa:loc:countries> <http://www.w3.org/2000/01/rdf-schema#label> "LOC MARC Countries (QA) - direct".
+_:b399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b401;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b402.
+_:b400 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Place of Distribution"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bflc/simplePlace>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-7010.html>.
+<http://id.loc.gov/ontologies/bflc/simplePlace> <http://www.w3.org/2000/01/rdf-schema#label> "simplePlace".
+<http://original.rdatoolkit.org/rdachp2_rda2-7010.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.9.2"@en.
+_:b401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b403;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b404.
+_:b402 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Distributor's Name"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bflc/simpleAgent>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasRemark> "If a linkable value is wanted for the distributor's name and role, also add a bf:Contribution in the instance template."@en;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-7122.html>.
+<http://id.loc.gov/ontologies/bflc/simpleAgent> <http://www.w3.org/2000/01/rdf-schema#label> "simpleAgent".
+<http://original.rdatoolkit.org/rdachp2_rda2-7122.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.9.4"@en.
+_:b403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b405.
+_:b404 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Date of Distribution"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bflc/simpleDate>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-7231.html>.
+<http://id.loc.gov/ontologies/bflc/simpleDate> <http://www.w3.org/2000/01/rdf-schema#label> "simpleDate".
+<http://original.rdatoolkit.org/rdachp2_rda2-7231.html> <http://www.w3.org/2000/01/rdf-schema#label> "RDA 2.9.6"@en.
+_:b405 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note on Distribution Statement"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/note>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasRemarkUrl> <http://original.rdatoolkit.org/rdachp2_rda2-7231.html>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b406.
+<http://id.loc.gov/ontologies/bibframe/note> <http://www.w3.org/2000/01/rdf-schema#label> "note"@en.
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b406 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Note:GeneralNote>.
+<pcc:bf2:Note:GeneralNote> <http://www.w3.org/2000/01/rdf-schema#label> "Note (pcc:bf2:Note:GeneralNote)"@en.
