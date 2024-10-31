@@ -1,0 +1,466 @@
+[
+  {
+    "@id": "_:b367",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Year of Publication",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/date"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemark": [
+      {
+        "@value": "Enter the year only as you would in the MARC 008, e.g., 1983; 198u",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/required"
+      },
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/literal"
+      }
+    ]
+  },
+  {
+    "@id": "_:b369",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Country of Publication",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/place"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemark": [
+      {
+        "@value": "Country code is required if converting to MARC. Provide only 1 code; it will populate the 008 place of publication field. Add a FAST term if a linkable place name is wanted. ",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/required"
+      },
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed"
+      },
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/uri"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasLookupAttributes": [
+      {
+        "@id": "_:b370"
+      }
+    ]
+  },
+  {
+    "@id": "_:b370",
+    "@type": [
+      "http://sinopia.io/vocabulary/LookupPropertyTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasAuthority": [
+      {
+        "@id": "urn:ld4p:qa:loc:countries"
+      }
+    ]
+  },
+  {
+    "@id": "_:b372",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Place of Publication",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bflc/simplePlace"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemark": [
+      {
+        "@value": "CORE RDA element",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/required"
+      },
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/literal"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemarkUrl": [
+      {
+        "@id": "http://original.rdatoolkit.org/rdachp2_rda2-6453.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:b374",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Publisher's Name",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bflc/simpleAgent"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemark": [
+      {
+        "@value": "CORE RDA element. If a linkable value is wanted for the publisher's name and role, also add a bf:Contribution in the instance template.",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/required"
+      },
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/literal"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemarkUrl": [
+      {
+        "@id": "http://original.rdatoolkit.org/rdachp2_rda2-6453.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:b376",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Date of Publication",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bflc/simpleDate"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemark": [
+      {
+        "@value": "CORE RDA element",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/literal"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemarkUrl": [
+      {
+        "@id": "http://original.rdatoolkit.org/rdachp2_rda2-6792.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:b377",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Note on Publication Statement",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/note"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/resource"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemarkUrl": [
+      {
+        "@id": "http://original.rdatoolkit.org/rdachp2_rda2-9101.html"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasResourceAttributes": [
+      {
+        "@id": "_:b378"
+      }
+    ]
+  },
+  {
+    "@id": "_:b378",
+    "@type": [
+      "http://sinopia.io/vocabulary/ResourcePropertyTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasResourceTemplateId": [
+      {
+        "@id": "pcc:bf2:Note:GeneralNote"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bflc/simpleAgent",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "simpleAgent"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bflc/simpleDate",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "simpleDate"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bflc/simplePlace",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "simplePlace"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bibframe/date",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "date"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bibframe/note",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "note",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bibframe/place",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "place"
+      }
+    ]
+  },
+  {
+    "@id": "http://original.rdatoolkit.org/rdachp2_rda2-6453.html",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "RDA 2.8.2",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://original.rdatoolkit.org/rdachp2_rda2-6792.html",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "RDA 2.8.6",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://original.rdatoolkit.org/rdachp2_rda2-9101.html",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "RDA 2.17.7",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "language suppressed"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "repeatable"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyAttribute/required",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "required"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyType/literal",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "literal"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyType/resource",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "nested resource"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyType/uri",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "uri or lookup"
+      }
+    ]
+  },
+  {
+    "@id": "https://api.stage.sinopia.io/resource/pcc:bflc:ProvisionActivity:Publication",
+    "http://sinopia.io/vocabulary/hasResourceTemplate": [
+      {
+        "@value": "sinopia:template:resource"
+      }
+    ],
+    "@type": [
+      "http://sinopia.io/vocabulary/ResourceTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasResourceId": [
+      {
+        "@value": "pcc:bflc:ProvisionActivity:Publication",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasClass": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/Publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Provision Activity--Publication Information",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasAuthor": [
+      {
+        "@value": "PCC",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasDate": [
+      {
+        "@value": "2022-11-29",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyTemplate": [
+      {
+        "@list": [
+          {
+            "@id": "_:b367"
+          },
+          {
+            "@id": "_:b369"
+          },
+          {
+            "@id": "_:b372"
+          },
+          {
+            "@id": "_:b374"
+          },
+          {
+            "@id": "_:b376"
+          },
+          {
+            "@id": "_:b377"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "pcc:bf2:Note:GeneralNote",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Note (pcc:bf2:Note:GeneralNote)",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "urn:ld4p:qa:loc:countries",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "LOC MARC Countries (QA) - direct"
+      }
+    ]
+  }
+]
