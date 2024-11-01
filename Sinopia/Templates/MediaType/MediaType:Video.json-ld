@@ -1,0 +1,160 @@
+[
+  {
+    "@id": "_:b164",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Media Type",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/uri"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasLookupAttributes": [
+      {
+        "@id": "_:b165"
+      }
+    ]
+  },
+  {
+    "@id": "_:b165",
+    "@type": [
+      "http://sinopia.io/vocabulary/LookupPropertyTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasAuthority": [
+      {
+        "@id": "urn:ld4p:qa:loc:mediaTypes"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasDefault": [
+      {
+        "@id": "http://id.loc.gov/vocabulary/mediaTypes/v"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/vocabulary/mediaTypes/v",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "video",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "repeatable"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyType/uri",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "uri or lookup"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/resourceAttribute/suppressible",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "suppressible"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "label",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://api.stage.sinopia.io/resource/pcc:bf2:MediaType:Video",
+    "http://sinopia.io/vocabulary/hasResourceTemplate": [
+      {
+        "@value": "sinopia:template:resource"
+      }
+    ],
+    "@type": [
+      "http://sinopia.io/vocabulary/ResourceTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasResourceId": [
+      {
+        "@value": "pcc:bf2:MediaType:Video",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasClass": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/Media"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Media Type--Video",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasAuthor": [
+      {
+        "@value": "PCC",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasRemark": [
+      {
+        "@value": "Media type with \"video\" default",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasDate": [
+      {
+        "@value": "2024-04-28",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasResourceAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/resourceAttribute/suppressible"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyTemplate": [
+      {
+        "@list": [
+          {
+            "@id": "_:b164"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "urn:ld4p:qa:loc:mediaTypes",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "LOC Media Types (QA) - direct"
+      }
+    ]
+  }
+]
