@@ -1,0 +1,277 @@
+[
+  {
+    "@id": "_:b122",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Other identifier"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/literal"
+      }
+    ]
+  },
+  {
+    "@id": "_:b124",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Qualifier",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/qualifier"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/literal"
+      }
+    ]
+  },
+  {
+    "@id": "_:b126",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Assigner of Other Identifier",
+        "@language": "en"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/assigner"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/resource"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasResourceAttributes": [
+      {
+        "@id": "_:b127"
+      }
+    ]
+  },
+  {
+    "@id": "_:b127",
+    "@type": [
+      "http://sinopia.io/vocabulary/ResourcePropertyTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasResourceTemplateId": [
+      {
+        "@id": "pcc:bf2:Agent:Assigner"
+      }
+    ]
+  },
+  {
+    "@id": "_:b128",
+    "@type": [
+      "http://sinopia.io/vocabulary/PropertyTemplate"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Note"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyUri": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/note"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyAttribute": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyType": [
+      {
+        "@id": "http://sinopia.io/vocabulary/propertyType/resource"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasResourceAttributes": [
+      {
+        "@id": "_:b129"
+      }
+    ]
+  },
+  {
+    "@id": "_:b129",
+    "@type": [
+      "http://sinopia.io/vocabulary/ResourcePropertyTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasResourceTemplateId": [
+      {
+        "@id": "pcc:bf2:Note:GeneralNote"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bibframe/Identifier",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "http://id.loc.gov/ontologies/bibframe/Identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bibframe/assigner",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "assigner",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bibframe/note",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "note"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/ontologies/bibframe/qualifier",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifier",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "language suppressed"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyAttribute/repeatable",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "repeatable"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyType/literal",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "literal"
+      }
+    ]
+  },
+  {
+    "@id": "http://sinopia.io/vocabulary/propertyType/resource",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "nested resource"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "value"
+      }
+    ]
+  },
+  {
+    "@id": "https://api.stage.sinopia.io/resource/pcc:bf2:Identifiers:Other",
+    "http://sinopia.io/vocabulary/hasResourceTemplate": [
+      {
+        "@value": "sinopia:template:resource"
+      }
+    ],
+    "@type": [
+      "http://sinopia.io/vocabulary/ResourceTemplate"
+    ],
+    "http://sinopia.io/vocabulary/hasResourceId": [
+      {
+        "@value": "pcc:bf2:Identifiers:Other"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasClass": [
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/Identifier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Identifiers--Other Identifier"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasAuthor": [
+      {
+        "@value": "PCC"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasDate": [
+      {
+        "@value": "2020-09-20",
+        "@language": "eng"
+      }
+    ],
+    "http://sinopia.io/vocabulary/hasPropertyTemplate": [
+      {
+        "@list": [
+          {
+            "@id": "_:b122"
+          },
+          {
+            "@id": "_:b124"
+          },
+          {
+            "@id": "_:b126"
+          },
+          {
+            "@id": "_:b128"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "pcc:bf2:Agent:Assigner",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Agent (pcc:bf2:Agent:Assigner)",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "pcc:bf2:Note:GeneralNote",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Note (pcc:bf2:Note:GeneralNote)",
+        "@language": "en"
+      }
+    ]
+  }
+]
