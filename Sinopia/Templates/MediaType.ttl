@@ -1,0 +1,24 @@
+<https://api.stage.sinopia.io/resource/pcc:bf2:MediaType> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bf2:MediaType"@en;
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/Media>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Media Type"@en;
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC"@en;
+    <http://sinopia.io/vocabulary/hasDate> "2022-08-25"@en;
+    <http://sinopia.io/vocabulary/hasResourceAttribute> <http://sinopia.io/vocabulary/resourceAttribute/suppressible>;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b133.
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "label"@en.
+<http://sinopia.io/vocabulary/resourceAttribute/suppressible> <http://www.w3.org/2000/01/rdf-schema#label> "suppressible".
+_:b133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b134.
+_:b134 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Media Type"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://www.w3.org/2000/01/rdf-schema#label>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/uri>;
+    <http://sinopia.io/vocabulary/hasLookupAttributes> _:b135.
+<http://sinopia.io/vocabulary/propertyAttribute/repeatable> <http://www.w3.org/2000/01/rdf-schema#label> "repeatable".
+<http://sinopia.io/vocabulary/propertyType/uri> <http://www.w3.org/2000/01/rdf-schema#label> "uri or lookup".
+_:b135 a <http://sinopia.io/vocabulary/LookupPropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasAuthority> <urn:ld4p:qa:loc:mediaTypes>.
+<urn:ld4p:qa:loc:mediaTypes> <http://www.w3.org/2000/01/rdf-schema#label> "LOC Media Types (QA) - direct".
