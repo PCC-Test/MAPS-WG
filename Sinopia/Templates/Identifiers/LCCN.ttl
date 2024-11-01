@@ -1,0 +1,31 @@
+<https://api.stage.sinopia.io/resource/pcc:bf2:Identifiers:LCCN> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bf2:Identifiers:LCCN";
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/Lccn>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Identifiers--LCCN";
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC";
+    <http://sinopia.io/vocabulary/hasDate> "2024-04-26"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b90.
+<http://id.loc.gov/ontologies/bibframe/Lccn> <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/ontologies/bibframe/Lccn".
+_:b90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b91;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b92.
+_:b91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b93.
+_:b92 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "LCCN";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#label> "value".
+<http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed> <http://www.w3.org/2000/01/rdf-schema#label> "language suppressed".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b93 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Canceled/Invalid?";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/status>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b94.
+<http://id.loc.gov/ontologies/bibframe/status> <http://www.w3.org/2000/01/rdf-schema#label> "status".
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b94 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Status>.
+<pcc:bf2:Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status (pcc:bf2:Status)"@en.
