@@ -1,0 +1,51 @@
+<https://api.stage.sinopia.io/resource/pcc:bf2:Identifiers:Other> <http://sinopia.io/vocabulary/hasResourceTemplate> "sinopia:template:resource";
+    a <http://sinopia.io/vocabulary/ResourceTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceId> "pcc:bf2:Identifiers:Other";
+    <http://sinopia.io/vocabulary/hasClass> <http://id.loc.gov/ontologies/bibframe/Identifier>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Identifiers--Other Identifier";
+    <http://sinopia.io/vocabulary/hasAuthor> "PCC";
+    <http://sinopia.io/vocabulary/hasDate> "2020-09-20"@eng;
+    <http://sinopia.io/vocabulary/hasPropertyTemplate> _:b110.
+<http://id.loc.gov/ontologies/bibframe/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/ontologies/bibframe/Identifier".
+_:b110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b111;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b112.
+_:b111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b113;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b114.
+_:b112 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Other identifier";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#label> "value".
+<http://sinopia.io/vocabulary/propertyAttribute/languageSuppressed> <http://www.w3.org/2000/01/rdf-schema#label> "language suppressed".
+<http://sinopia.io/vocabulary/propertyType/literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal".
+_:b113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b115;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b116.
+_:b114 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Qualifier"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/qualifier>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/literal>.
+<http://id.loc.gov/ontologies/bibframe/qualifier> <http://www.w3.org/2000/01/rdf-schema#label> "qualifier"@en.
+_:b115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b118.
+_:b116 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Assigner of Other Identifier"@en;
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/assigner>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b117.
+<http://id.loc.gov/ontologies/bibframe/assigner> <http://www.w3.org/2000/01/rdf-schema#label> "assigner"@en.
+<http://sinopia.io/vocabulary/propertyType/resource> <http://www.w3.org/2000/01/rdf-schema#label> "nested resource".
+_:b117 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Agent:Assigner>.
+<pcc:bf2:Agent:Assigner> <http://www.w3.org/2000/01/rdf-schema#label> "Agent (pcc:bf2:Agent:Assigner)"@en.
+_:b118 a <http://sinopia.io/vocabulary/PropertyTemplate>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Note";
+    <http://sinopia.io/vocabulary/hasPropertyUri> <http://id.loc.gov/ontologies/bibframe/note>;
+    <http://sinopia.io/vocabulary/hasPropertyAttribute> <http://sinopia.io/vocabulary/propertyAttribute/repeatable>;
+    <http://sinopia.io/vocabulary/hasPropertyType> <http://sinopia.io/vocabulary/propertyType/resource>;
+    <http://sinopia.io/vocabulary/hasResourceAttributes> _:b119.
+<http://id.loc.gov/ontologies/bibframe/note> <http://www.w3.org/2000/01/rdf-schema#label> "note".
+<http://sinopia.io/vocabulary/propertyAttribute/repeatable> <http://www.w3.org/2000/01/rdf-schema#label> "repeatable".
+_:b119 a <http://sinopia.io/vocabulary/ResourcePropertyTemplate>;
+    <http://sinopia.io/vocabulary/hasResourceTemplateId> <pcc:bf2:Note:GeneralNote>.
+<pcc:bf2:Note:GeneralNote> <http://www.w3.org/2000/01/rdf-schema#label> "Note (pcc:bf2:Note:GeneralNote)"@en.
